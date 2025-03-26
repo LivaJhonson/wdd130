@@ -1,0 +1,112 @@
+/* rafting.css */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #194488; /* for header */
+}
+
+.nav-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.nav-columns a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* White Water Rafting Section (Hero) */
+.hero {
+    position: relative;
+    text-align: left;
+    color: white; /* Set text color to white for better visibility */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust as needed */
+    max-width: 1000px; /* Adjust as needed */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-top: 0px;
+    position: static;
+    color: rgb(11, 2, 3);
+    text-align: center;
+}
+
+.hero article {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add background for article */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    max-width: 150px;
+    float: right; /* This is the crucial part */
+    margin-left: 20px; /* Add space between image and paragraph */
+}
+.hero article p {
+    flex: 1; /* Allow paragraph to take remaining space */
+    color:black;
+    text-align: center;
+}
+/* History Section */
+.history {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Lighter gray for History */
+}
+
+/* Adventure Awaits You Section */
+.history h2 {
+    text-align: center;
+    color:black;    
+}
+.history p {
+    text-align: center;
+    color:black;
+}
+.adventure {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e9ecef; /* Light gray for Adventure */
+}
+
+.adventure img {
+    max-width: 150px;
+    margin: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: left; /* Align the text to the left */
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex; /* use flex box to align items*/
+    justify-content: space-between; /* put space between the paragraph and the social links*/
+    align-items: center; /* vertically align items */
+}
+.sociallinks img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-left: 10px; /* Add some spacing between the icons */
+}
