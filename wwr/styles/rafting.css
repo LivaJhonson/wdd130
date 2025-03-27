@@ -1,11 +1,23 @@
 /* rafting.css */
+:root {
+        --primary-color: #7289ae;
+        --secondary-color: #f0f0f0;
+        --accent-color: rgb(212, 249, 5);
+        --background-color: #e9ecef;
+        --text-color: black;
+        --hero-article-background: rgba(255, 255, 255, 0.8);
+        --footer-background-color: rgb(222, 112, 112);
+        --adventure-background-color: rgb(178, 151, 151);
+        --social-link-color: #233fcd;
+}
+
 /* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #194488; /* for header */
+    background-color: var(--primary-color); /* for header */
 }
 
 .nav-columns {
@@ -18,14 +30,14 @@ header {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* White Water Rafting Section (Hero) */
 .hero {
     position: relative;
     text-align: left;
-    color: white; /* Set text color to white for better visibility */
+    color: var(--primary-color); 
 }
 
 .hero img {
@@ -39,22 +51,25 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; /* Adjust as needed */
-    max-width: 1000px; /* Adjust as needed */
+    width: 100%;
+    max-width: 1000px;
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin-top: 0px;
-    position: static;
-    color: rgb(212, 249, 5);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent-color);
     text-align: center;
 }
 
 .hero article {
+    position: absolute;
     display: flex;
+    top: -50px;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Add background for article */
+    background-color: var(--hero-article-background); 
     padding: 20px;
     border-radius: 8px;
 }
@@ -62,33 +77,37 @@ header {
 .hero article img {
     max-width: 150px;
     float: right; 
-    margin-left: 20px; /* Add space between image and paragraph */
+    margin-left: 20px; 
 }
+
 .hero article p {
-    flex: 1; /* Allow paragraph to take remaining space */
-    color:black;
+    flex: 1; 
+    color: var(--text-color);
     text-align: center;
 }
+
 /* History Section */
 .history {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f8f9fa; /* for History */
+    background-color: var(--background-color); 
 }
 
 /* Adventure Awaits You Section */
 .history h2 {
     text-align: center;
-    color:black;    
+    color: var(--text-color);    
 }
+
 .history p {
     text-align: center;
-    color:black;
+    color: var(--text-color);
 }
+
 .adventure {
     padding: 40px 20px;
     text-align: center;
-    background-color: #e9ecef; /* for Adventure */
+    background-color: var(--advanture-background-color); 
 }
 
 .adventure img {
@@ -98,15 +117,23 @@ header {
 
 /* Footer Styling */
 footer {
-    text-align: left; /* Align the text to the left */
+    text-align: left; 
     padding: 20px;
-    background-color: #f0f0f0;
-    display: flex; /* use flex box to align items*/
-    justify-content: space-between; /* put space between the paragraph and the social links*/
-    align-items: center; /* vertically align items */
+    background-color: var(--footer-background-color);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+} 
+
+.sociallinks a {
+    text-decoration: none; 
+    color: var(--social-link-color);
 }
-.sociallinks img {
+
+.sociallinks a img{
     width: 30px; 
     height: 30px; 
-    margin-left: 10px; 
+    margin-left: 10px;
+    text-decoration: none; 
+    color: var(--social-link-color);
 }
