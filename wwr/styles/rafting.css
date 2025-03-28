@@ -1,7 +1,6 @@
 /* rafting.css */
 :root {
         --primary-color: #7289ae;
-        --secondary-color: #f0f0f0;
         --accent-color: rgb(212, 249, 5);
         --background-color: #e9ecef;
         --text-color: black;
@@ -107,7 +106,7 @@ header {
 .adventure {
     padding: 40px 20px;
     text-align: center;
-    background-color: var(--advanture-background-color); 
+    background-color: var(--adventure-background-color); 
 }
 
 .adventure img {
