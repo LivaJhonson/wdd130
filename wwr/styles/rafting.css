@@ -38,7 +38,7 @@ header {
     font-family: Arial, sans-serif;
     justify-self: center;
     gap: 0px;
-    width: 200;
+    max-width: 200%;
 }
 
 .nav-columns a {
@@ -122,7 +122,7 @@ header {
     color: var(--text-color);    
 }
 
-.history .left-paragraph {
+.history p.left-paragraph {
     grid-column: 1;
     text-align: center;
     color: var(--text-color);
@@ -134,7 +134,7 @@ header {
     height: auto;
 }
 
-.history p .right-paragraph {
+.history p.right-paragraph {
     grid-column: 3;
     text-align: center;
     color: var(--text-color);
