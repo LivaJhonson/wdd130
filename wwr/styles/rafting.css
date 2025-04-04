@@ -149,7 +149,7 @@ header {
 .rafting-figure {
     border: thin #c0c0c0 solid;
     display: flex;
-    flex-shrink: auto;
+    flex-shrink: 1;
     padding: 5px;
     max-width: 100%;
     height: auto;
