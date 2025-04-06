@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rafting Adventures</title>
+    <meta name="description" content="Get in touch with Rafting Adventures for inquiries, bookings, and more. Fill out our contact form or find our contact information here.">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Rafting Adventure Logo">
+        </div>
+        <nav class="nav-columns">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to book a rafting trip? Get in touch with us!</p>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 River Road, Rafting City, State, ZIP</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9472643593673!2d-73.9964573845947!3d40.72445837932822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25989cd000001%3A0x289ef32757a11478!2s123%20River%20Rd%2C%20Rafting%20City%2C%20State%2C%20ZIP!5e0!3m2!1sen!2sus!4v1703774400000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>John Doe, Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Jane Smith, Trip Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Mike Brown, Safety Officer</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <p>Purpose of Message:</p>
+                <input type="radio" id="inquiry" name="purpose" value="inquiry">
+                <label for="inquiry">General Inquiry</label><br>
+
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label><br>
+
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <label for="suggestion">Website Suggestion</label><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rafting Adventure | Nirintsoa Liva Jhonson Rabariharinjaka</p>
+        <a href="wireframe.png" target="_blank">Contact Us Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
