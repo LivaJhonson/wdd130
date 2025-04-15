@@ -309,6 +309,321 @@ header, main, footer {
     color: #fff;
 }
 
+/* CSS Style for Home Page */
+
+/* Hero Section Styles (Full-width with centered text) */
+.home-main .hero {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust as needed */
+    margin-bottom: 30px; /* Add some space below the hero */
+
+}
+
+.home-main .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+
+}
+
+.home-main .hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px; /* Increased padding for better visibility */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    flex-direction: column; /* Stack heading and button */
+    align-items: center;
+}
+
+.home-main .hero h1 {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.home-main .hero .call-to-action {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 12px 24px; /* Slightly larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.home-main .hero .call-to-action:hover {
+    background-color: #4cae4c;
+}
+
+/* CSS Grid Layout (Two columns for images and content) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; /* Increased gap */
+    padding: 20px;
+    margin-bottom: 30px; /* Space before newsletter */
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left within grid items */
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.grid-item h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Newsletter Sign-up Form */
+.newsletter {
+    background-color: #eee;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px; /* Space before footer */
+    border-radius: 8px;
+}
+
+.newsletter h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Spacing between form elements     */
+}
+
+.newsletter label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1em;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styles for Trips Page */
+main.trips-main {
+    padding: 20px;
+}
+
+/* Call to Contact Section */
+.call-to-contact {
+    background-color: #ddd;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.call-to-contact h2 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.call-to-contact p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.1em; /* Added font-size for consistency */
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em; /* Added font-size for consistency */
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Trip Description Sections */
+.trip-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.trip-description > *:nth-child(2) { /* Target the second direct child (typically the text content) */
+    background-color: #cd7e7e; 
+    padding: 20px; /* Add some padding within the background */
+    border-radius: 20px; /* Optional: Add border-radius to the background */
+}
+.trip-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip-description h3 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Added font-size for better readability */
+}
+
+.trip-description p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.1em; /* Added font-size for consistency */
+}
+
+.trip-description ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+    font-size: 1.1em; /* Added font-size for consistency */
+}
+
+/* All Trips Table */
+.all-trips-table {
+    margin-bottom: 40px;
+    overflow-x: auto; /* For horizontal scrolling on smaller screens */
+}
+
+.all-trips-table h2 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em; /* Added font-size for better hierarchy */
+}
+
+.all-trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Added margin for spacing */
+    border-radius: 8px; /* Added border-radius for visual appeal */
+    overflow: hidden; /* Ensures border-radius is respected with overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.all-trips-table th, .all-trips-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.all-trips-table th {
+    background-color: #444; /* Darker background for header */
+    color: #fff;
+    font-weight: bold;
+    text-align: center; /* Center header text */
+}
+
+.all-trips-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.all-trips-table tbody tr:hover {
+    background-color: #e0f7fa; /* Light cyan on hover */
+    cursor: pointer; /* Indicate interactivity on hover */
+}
+
+/* Footer - Link to Wireframe */
+footer a[href*="wireframe"] {
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Add some space above the social links */
+    display: block; /* Make it a block element for spacing */
+}
+
+footer a[href*="wireframe"]:hover {
+    color: #ddd;
+}
+
+/* Responsive Design for Trips Page */
+@media (max-width: 768px) {
+    .trip-description {
+        grid-template-columns: 1fr; /* Stack image and text */
+        text-align: center;
+    }
+
+    .trip-description img {
+        margin-bottom: 15px;
+    }
+
+    .all-trips-table table {
+        font-size: 0.9em;
+    }
+
+    .all-trips-table th, .all-trips-table td {
+        padding: 8px;
+    }
+}
+
 /* Footer Styling */
 footer {
     text-align: left; 

@@ -3,189 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting</title>
+    <title>Home | Rafting Adventures</title>
+    <meta name="description" content="Get in touch with Rafting Adventures for inquiries, bookings, and more. Fill out our contact form or find our contact information here.">
+    <meta name="author" content="Nirintsoa Liva Jhonson Rabariharinjaka">
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #B24C63;
-            --secondary-color: #5438DC;
-            --accent1-color: #56EEF4;
-            --accent2-color: #32E875;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-            background-color: var(--accent1-color);
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: var(--accent1-color);
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header img {
-            max-width: 150px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin-left: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            border: 1px solid white;
-            display: block;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-            flex-grow: 1;
-            position: relative;
-        }
-
-        .hero {
-            background-color: var(--accent2-color);
-            text-align: center;
-            padding: 50px 20px;
-            position: relative;
-        }
-
-        .hero button {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-        }
-
-        .images {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .images img {
-            width: 200px;
-            height: auto;
-            border: 1px dashed gray;
-        }
-
-        .raft-drawing img {
-            border: 1px dashed gray;
-        }
-
-        .banner {
-            background-image: url('images/rafting-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .banner-cta {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-        }
-
-        .banner-cta button {
-            background-color: #FF6347;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: var(--accent1-color);
-            text-align: center;
-            padding: 20px;
-        }
-
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-        }
-
-        .social-icons img {
-            width: 30px;
-            height: auto;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Whitewater Rafting Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Rafting Adventure Logo">
+        </div>
+        <nav class="nav-columns">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
-    <main>
+    <main class="home-main">
         <section class="hero">
-            <h2>Your Adventure Awaits!</h2>
-            <p>Experience the thrill of whitewater rafting.</p>
-            <button>Call to Action</button>
-        </section>
-
-        <section class="images">
-            <img src="https://th.bing.com/th/id/OIP.veys6a6h76NpSHe1rA4wHwHaGd?w=217&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 1" width="200">
-            <img src="https://th.bing.com/th/id/OIP.sJcUHhojXUus9pT-oYfk5gHaE9?w=338&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 2" width="200">
-            <img src="https://th.bing.com/th/id/OIF.sqkPEYjTZa3zKYn0A7TOZw?w=154&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 3" width="200">
-        </section>
-
-        <section class="raft-drawing">
-            <img src="https://th.bing.com/th/id/OIP.30N9l5AmWJW7qD9VgVEvtgHaE7?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Raft Drawing">
-        </section>
-
-        <section class="banner">
-            <div class="banner-cta">
-                <button>Explore Trips</button>
+            <img src="images/homehero.webp" alt="Hero Image of People Rafting">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+            <div class="hero-content">
+                <a href="trips.html" class="call-to-action">Discover Our Trips</a>
             </div>
+        </section>
+
+        <div class="grid-container">
+            <section class="grid-item">
+                <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
+                <h2>Unforgettable Adventures</h2>
+                <p>Embark on an unforgettable white water rafting adventure with our expert guides. We offer thrilling experiences for all skill levels.</p>
+            </section>
+
+            <section class="grid-item">
+                <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
+                <h2>Explore Stunning Scenery</h2>
+                <p>Discover breathtaking landscapes and wild rivers as you navigate through exciting rapids and calm stretches.</p>
+            </section>
+        </div>
+
+        <section class="newsletter">
+            <h2>Stay Up-to-Date with Our Adventures</h2>
+            <p>Sign up for our newsletter to receive the latest news and special offers.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Whitewater Rafting</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.jpg" alt="Twitter"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
-        </div>
+        <p>&copy; 2025 Rafting Adventure | Nirintsoa Liva Jhonson Rabariharinjaka</p>
+        <a href="https://app.moqups.com/cJTBxTJGxAXHa4CxZFhq1NFn6YWRyhPM/view/page/ad64222d5" target="_blank">Contact Us Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
