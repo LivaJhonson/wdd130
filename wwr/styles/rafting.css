@@ -18,11 +18,11 @@ header {
     border-bottom: 0px solid #ccc; 
     width: 100%;
     height: 200px;
-    background-color: var(--primary-color); /* for header */
+    background-color: var(--primary-color); 
 }
 
 .logo {
-    grid-column: 1; /* Place logo in the middle column */
+    grid-column: 1; 
     justify-self: center;
     gap: 20px;
 }
@@ -311,12 +311,13 @@ header, main, footer {
 
 /* CSS Style for Home Page */
 
-/* Hero Section Styles (Full-width with centered text) */
+/* Hero Section Styles */
 .home-main .hero {
     position: relative;
     overflow: hidden;
-    height: 500px; /* Adjust as needed */
-    margin-bottom: 30px; /* Add some space below the hero */
+    height: 500px; 
+    margin-bottom: 30px;
+    padding: 30px;
 
 }
 
@@ -336,21 +337,21 @@ header, main, footer {
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px; /* Increased padding for better visibility */
+    padding: 30px;
     border-radius: 10px;
     width: 80%;
     max-width: 600px;
-    flex-direction: column; /* Stack heading and button */
+    flex-direction: column;
     align-items: center;
 }
 
 .home-main .hero h1 {
     font-family: 'Merriweather', serif;
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--accent-color);
+    color: rgb(252, 253, 252);
     text-align: center;
 }
 
@@ -358,7 +359,7 @@ header, main, footer {
     display: inline-block;
     background-color: #5cb85c;
     color: #fff;
-    padding: 12px 24px; /* Slightly larger button */
+    padding: 12px 24px; 
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -376,7 +377,7 @@ header, main, footer {
     grid-template-columns: 1fr 1fr;
     gap: 30px; /* Increased gap */
     padding: 20px;
-    margin-bottom: 30px; /* Space before newsletter */
+    margin-bottom: 30px; 
 }
 
 .grid-item {
@@ -384,7 +385,7 @@ header, main, footer {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to the left within grid items */
+    text-align: left; 
 }
 
 .grid-item img {
@@ -407,7 +408,7 @@ header, main, footer {
     background-color: #eee;
     padding: 40px 20px;
     text-align: center;
-    margin-bottom: 30px; /* Space before footer */
+    margin-bottom: 30px; 
     border-radius: 8px;
 }
 
@@ -428,7 +429,7 @@ header, main, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Spacing between form elements     */
+    gap: 10px; 
 }
 
 .newsletter label {
@@ -462,8 +463,9 @@ header, main, footer {
 }
 
 /* Main Content Styles for Trips Page */
-main.trips-main {
-    padding: 20px;
+.trips-main {
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Call to Contact Section */
@@ -484,7 +486,7 @@ main.trips-main {
 .call-to-contact p {
     color: #555;
     margin-bottom: 20px;
-    font-size: 1.1em; /* Added font-size for consistency */
+    font-size: 1.1em; 
 }
 
 .contact-button {
@@ -495,7 +497,7 @@ main.trips-main {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 1.1em; /* Added font-size for consistency */
+    font-size: 1.1em; 
 }
 
 .contact-button:hover {
@@ -514,42 +516,58 @@ main.trips-main {
     border-radius: 8px;
 }
 
-.trip-description > *:nth-child(2) { /* Target the second direct child (typically the text content) */
-    background-color: #cd7e7e; 
-    padding: 20px; /* Add some padding within the background */
-    border-radius: 20px; /* Optional: Add border-radius to the background */
-}
 .trip-description img {
-    max-width: 100%;
-    height: auto;
+    grid-column: 1;
+    width: 400px;
+    height: 250px;
     border-radius: 5px;
 }
+
+.trip-info {
+    grid-column: 2;
+    padding: 20px;
+    border-radius: 50px; 
+}
+
+.trip-color-wild-river {
+    background-color: #f0f8ff;
+}
+
+.trip-color-scenic-canyon {
+    background-color: #faebd7; 
+}
+
+.trip-color-rapid-rush {
+    background-color: #e0ffff; 
+}
+
+/* Add more color classes as needed for each trip */
 
 .trip-description h3 {
     font-family: 'Merriweather', serif;
     color: #333;
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 1.5em; /* Added font-size for better readability */
+    font-size: 1.5em; 
 }
 
 .trip-description p {
     color: #555;
     margin-bottom: 15px;
-    font-size: 1.1em; /* Added font-size for consistency */
+    font-size: 1.1em; 
 }
 
 .trip-description ul {
     list-style: disc;
     padding-left: 20px;
     color: #555;
-    font-size: 1.1em; /* Added font-size for consistency */
+    font-size: 1.1em;
 }
 
 /* All Trips Table */
 .all-trips-table {
     margin-bottom: 40px;
-    overflow-x: auto; /* For horizontal scrolling on smaller screens */
+    overflow-x: auto; 
 }
 
 .all-trips-table h2 {
@@ -557,17 +575,17 @@ main.trips-main {
     color: #333;
     margin-bottom: 25px;
     text-align: center;
-    font-size: 2em; /* Added font-size for better hierarchy */
+    font-size: 2em; 
 }
 
 .all-trips-table table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #ccc;
-    margin-bottom: 20px; /* Added margin for spacing */
-    border-radius: 8px; /* Added border-radius for visual appeal */
-    overflow: hidden; /* Ensures border-radius is respected with overflow */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .all-trips-table th, .all-trips-table td {
@@ -596,8 +614,8 @@ main.trips-main {
 footer a[href*="wireframe"] {
     color: #fff;
     text-decoration: underline;
-    margin-bottom: 10px; /* Add some space above the social links */
-    display: block; /* Make it a block element for spacing */
+    margin-bottom: 10px; 
+    display: block;
 }
 
 footer a[href*="wireframe"]:hover {
@@ -607,7 +625,7 @@ footer a[href*="wireframe"]:hover {
 /* Responsive Design for Trips Page */
 @media (max-width: 768px) {
     .trip-description {
-        grid-template-columns: 1fr; /* Stack image and text */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 
